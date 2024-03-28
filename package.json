@@ -1,0 +1,22 @@
+{
+  "name": "dev-kit",
+  "version": "1.0.0",
+  "description": "Toolkit for minu development.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "test": "node --test",
+    "start": "node index.js",
+    "prepare": "husky"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": "20.11.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}
