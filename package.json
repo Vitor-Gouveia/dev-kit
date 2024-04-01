@@ -5,10 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch index.js",
-    "test": "node --test",
-    "start": "node index.js",
-    "prepare": "husky"
+    "feedback": "node lib/feedback/cli.js"
   },
   "engineStrict": true,
   "engines": {
@@ -16,8 +13,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "chalk": "^5.3.0",
-    "husky": "^9.0.11"
+  "dependencies": {
+    "chalk": "^5.3.0"
   }
 }
