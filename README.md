@@ -31,10 +31,30 @@ Tem como proposta de valor os seguintes pontos:
 
 ### Update
 
-Tem como proposta de valor os seguintes pontos:
+O script update é responsável por atualizar o serviço em alguns critérios:
 
-- Atualização do Node.js e dependências
-- Padronização de arquivos (pull_request_template, dangerfile, data-dog)
+- Adição do `pull_request_template.md`
+- Atualização da versão do sonarqube
+- Atualização do Node.js
+- Padronização do arquivo data-dog
+
+### Danger
+
+O script danger é responsável por adicionar o danger e as dependências no serviço no ambiente do Github Actions.
+
+Pode ser executado com o seguinte comando:
+
+`npx @vitorgouveia/dev-kit danger`
+
+Esse script pode ser adicionado da seguinte forma no workflow `danger-js.yml` dos serviços.
+
+```yml
+- name: Running Danger on CI
+  env:
+    DANGER_GITHUB_API_TOKEN:  ${{ secrets.GH_PIPELINE_TOKEN }}
+  run: |
+    npx @vitorgouveia/dev-kit danger
+```
 
 ## Stack
 

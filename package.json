@@ -1,6 +1,6 @@
 {
   "name": "@vitorgouveia/dev-kit",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Toolkit for minu development.",
   "type": "module",
   "main": "index.js",
