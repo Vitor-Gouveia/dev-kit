@@ -6,7 +6,6 @@ const packageJSON = require('./package.json')
 
 import { Command } from "commander"
 
-import { feedback } from "./cmd/feedback.js"
 import { update } from "./cmd/update.js"
 import { init } from "./cmd/init.js"
 
@@ -18,7 +17,6 @@ program
   .version(packageJSON.version, "-v, --version", "Versão atual")
 
 program
-  .addCommand(feedback)
   .addCommand(update)
   .addCommand(init)
 
