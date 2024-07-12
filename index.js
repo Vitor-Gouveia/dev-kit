@@ -8,7 +8,6 @@ import { Command } from "commander"
 
 import { feedback } from "./cmd/feedback.js"
 import { update } from "./cmd/update.js"
-import { danger } from "./cmd/danger.js"
 import { init } from "./cmd/init.js"
 
 const program = new Command()
@@ -21,7 +20,6 @@ program
 program
   .addCommand(feedback)
   .addCommand(update)
-  .addCommand(danger)
   .addCommand(init)
 
 program.parse()
