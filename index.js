@@ -13,7 +13,7 @@ const program = new Command()
 
 program
   .name("Dev Kit")
-  .description("Uma aplicação CLI para atualização e feedback de status dos serviços Minu.")
+  .description("Uma aplicação CLI para atualização dos serviços Minu.")
   .version(packageJSON.version, "-v, --version", "Versão atual")
 
 program

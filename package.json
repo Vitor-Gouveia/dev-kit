@@ -1,12 +1,10 @@
 {
   "name": "@vitorgouveia/dev-kit",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "Toolkit for minu development.",
   "type": "module",
   "main": "index.js",
-  "scripts": {
-    "feedback": "node lib/feedback/cli.js"
-  },
+  "scripts": {},
   "homepage": "",
   "repository": {
     "url": ""
